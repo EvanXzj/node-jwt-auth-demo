@@ -34,7 +34,7 @@ module.exports = {
             if (!err && user) {
                 bcrypt.compare(password, user.password).then(match => {
                     if (match) {
-                        result,status = status
+                        result.status = status
                         result.result = user
 
                         // create a token 
